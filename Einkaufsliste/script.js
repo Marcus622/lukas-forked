@@ -1,3 +1,11 @@
+const toggleButton = document.getElementById("toggleDarkModeButton");
+
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+})
+
+
+
 const Kategorie = document.getElementById("Kategorie");
 const addButton = document.getElementById("addButton");
 const artikelInput = document.getElementById("artikel");
@@ -93,7 +101,8 @@ addButton.addEventListener("click", () => {
 })
 
 function updatePreis() {
-    gesamt.textContent = `Gesamt: ${gesamtPreis}€`;
+    gesamt.textContent = `Gesamt: ${gesamtPreis.toFixed(2)
+}€`;
 }
 
 deleteButton.addEventListener("click", () => {

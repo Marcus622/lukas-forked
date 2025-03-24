@@ -1,13 +1,35 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: bisque;
+    color: black;
+    transition: background-color 0.3s;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-body * {
-    margin: 5px;
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
 }
+
+.toggle-button {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
 
 /* Tooltip container */
 .tooltip {
@@ -36,3 +58,5 @@ body * {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  
